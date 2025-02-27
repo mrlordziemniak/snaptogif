@@ -1,3 +1,5 @@
+updated to working with new home assistant
+
 # snaptogif
 Homeassistant custom component for converting snapshots (jpg) to a gif or mp4
 ****
