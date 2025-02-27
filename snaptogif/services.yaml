@@ -1,58 +1,59 @@
 start:
-  description: Start create GIF/MP4 from snapshots
+  description: "Start creating GIF/MP4 from snapshots"
   fields:
     sourcepath:
-      description: path of the directory where the snaphots are in
-      example: '/config/snapshots'
-    destinationpath: 
-      description: path of the directory where the GIF/MP4 should be created
-      example: '/config/www'    
+      description: "Path of the directory where the snapshots are stored"
+      example: "/config/snapshots"
+    destinationpath:
+      description: "Path of the directory where the GIF/MP4 should be created"
+      example: "/config/www"
     filename:
-      description: Name for gif/mp4 file (OPTIONAL, default='latest')
-      example: 'latest'
+      description: "Name for GIF/MP4 file (OPTIONAL, default='latest')"
+      example: "latest"
     format:
-       description: Output to gif or mp4 (OPTIONAL, default='gif')  
-       example: 'mp4'       
+      description: "Output format (gif or mp4) (OPTIONAL, default='gif')"
+      example: "mp4"
     excludelist:
-        description: list of files (jpg) to exclude in the output
-        example: 'latest_snaphot.jpg'
+      description: "List of files (jpg) to exclude from the output"
+      example: "latest_snapshot.jpg"
     begintimestamp:
-      description: Start time for files to include (OPTIONAL, format mm/dd/yy hh:mm:ss)
-      example: '26/12/2021 12:00:00'
+      description: "Start time for files to include (OPTIONAL, format dd/mm/yyyy hh:mm:ss)"
+      example: "26/12/2021 12:00:00"
     endtimestamp:
-      description: End time for filest to include (OPTIONAL, format mm/dd/yy hh:mm:ss)
-      example: '26/12/2021 13:00:00'
+      description: "End time for files to include (OPTIONAL, format dd/mm/yyyy hh:mm:ss)"
+      example: "26/12/2021 13:00:00"
+
 delete:
-  description: Delete files (jpg, gif or mp4)  
+  description: "Delete files (jpg, gif, or mp4)"
   fields:
     sourcepath:
-      description: path of the directory where to delete the files
-      example: '/config/snapshots'
+      description: "Path of the directory where the files should be deleted"
+      example: "/config/snapshots"
     excludelist:
-        description: list of files (jpg, gif or mp4) to exclude in the deletion
-        example: 'latest_snaphot.jpg'  
+      description: "List of files (jpg, gif, or mp4) to exclude from deletion"
+      example: "latest_snapshot.jpg"
     begintimestamp:
-      description: Start time for files to include (OPTIONAL, format mm/dd/yy hh:mm:ss)
-      example: '26/12/2021 12:00:00'
+      description: "Start time for files to delete (OPTIONAL, format dd/mm/yyyy hh:mm:ss)"
+      example: "26/12/2021 12:00:00"
     endtimestamp:
-      description: End time for files to include (OPTIONAL, format mm/dd/yy hh:mm:ss)
-      example: '26/12/2021 13:00:00'
+      description: "End time for files to delete (OPTIONAL, format dd/mm/yyyy hh:mm:ss)"
+      example: "26/12/2021 13:00:00"
+
 move:
-  description: Move files (jpg, gif or mp4)
+  description: "Move files (jpg, gif, or mp4)"
   fields:
     sourcepath:
-      description: path of the directory where the files are in
-      example: '/config/snapshots'
-    destinationpath: 
-      description: path of the directory where to move the files
-      example: '/config/archive'       
+      description: "Path of the directory where the files are stored"
+      example: "/config/snapshots"
+    destinationpath:
+      description: "Path of the directory where the files should be moved"
+      example: "/config/archive"
     excludelist:
-        description: list of files (jpg, gif or mp4) to exclude in the move
-        example: 'latest_snaphot.jpg'
+      description: "List of files (jpg, gif, or mp4) to exclude from the move"
+      example: "latest_snapshot.jpg"
     begintimestamp:
-      description: Start time for files to include (OPTIONAL, format mm/dd/yy hh:mm:ss)
-      example: '26/12/2021 12:00:00'
+      description: "Start time for files to move (OPTIONAL, format dd/mm/yyyy hh:mm:ss)"
+      example: "26/12/2021 12:00:00"
     endtimestamp:
-      description: End time for files to include (OPTIONAL, format mm/dd/yy hh:mm:ss)
-      example: '26/12/2021 13:00:00'
-    
+      description: "End time for files to move (OPTIONAL, format dd/mm/yyyy hh:mm:ss)"
+      example: "26/12/2021 13:00:00"
